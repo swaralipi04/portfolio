@@ -1,0 +1,267 @@
+/*css style*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background: #420e37;
+    position: relative;
+}
+.logo{
+    width: 100px;
+    font-size: 2.5rem;
+    color:white;
+    font-weight: 500;
+    cursor: default;
+    text-decoration: none;
+
+}
+#navbar{
+    display:flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items:inline-block;
+    justify-content:right;
+}
+#navbar::before{
+    content:" ";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width:400%; 
+    z-index: -1;
+}
+/*list styling*/
+#navbar{
+    position: absolute;
+}
+#navbar ul li{
+    display :inline-flex;
+    color: white;
+    list-style: none;
+    font-size: 1rem;
+}
+#navbar ul li a{
+    color: aqua ;
+    padding:5px 20px;
+    border-radius:20px;
+    text-decoration:none;
+}
+#navbar ul li a:hover{
+    color:red;
+    background-color: blue;
+}
+.home{
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+.home h1{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+span{
+    color: orange;
+    
+}
+.home p{
+    color: #e1248f;
+    line-height: 30px;
+}
+.image{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.image img{
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.image:hover .pic{
+    bottom: 40px;
+}
+
+.images:hover .my{
+    left: 45%;
+}
+.ABOUT{
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background: #d5e9ea;
+}
+.heading{
+    text-align: center;
+    font-size: 3.5rem;
+  }
+  .about-content h2{
+    text-align: center;
+    /* line-height: 0.8; */
+    padding-bottom: 1.5rem;
+    padding-right: 14rem;
+  }
+  .about-content h3{
+    font-size: 2.6rem;
+    padding-left: 10rem;
+  }
+  .about-content p{
+    font-size: 2.6rem;
+    color: rgb(15, 18, 3);
+    padding-left: 10rem;
+    
+  }
+#ACHIEVEMENTS{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background: #3b7e81;
+}
+.heading1{
+    text-align: center;
+    font-size: 3.5rem;
+}
+#ACHIEVEMENTS ul{
+    display :inline-block;
+
+}
+
+#ACHIEVEMENTS ul li{
+    color: white;
+    list-style:circle;
+    font-size: 1.5rem;
+}
+#ACHIEVEMENTS ul li a{
+    color: rgb(167, 7, 7) ;
+    display:block;
+    padding:5px 20px;
+    border-radius:20px;
+    text-decoration:none;
+}
+#CONTACT{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #d734a6;
+}
+#CONTACT::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    
+
+}
+.p1{
+    text-align:center;
+    font-size: 3.5rem;
+}
+#CONTACT-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#CONTACT-box input, 
+#CONTACT-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#CONTACT-box form{
+    width: 40%;
+}
+
+#CONTACT-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+} 
+.fa {
+    /* margin-top: 5em;
+    padding: 30px;
+    font-size: 5px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%; */
+  
+  
+    padding: 20px;
+    font-size: 800px;
+    font-weight: 40px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 5rem;
+    border-radius: 15em;
+  
+  
+  }
+.icons{
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-evenly; */
+    padding-top: 15px;
+    margin: 10px;
+    gap: 15em;
+  }
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-linkedin {
+    background: #4376e4;
+    color: white;
+  }
+  .fa-instagram {
+    background: #e79e0d;
+    color: white;
+  }
+  @media (max-width: 1200px){
+    html {
+      font-size: 55%;
+    }
+  }
+  @media (max-width: 991px){
+    .header{
+      padding: 2rem 3%;
+    }
+    section{
+      padding: 10rem 3% 2 rem;
+    }
+    .footer{
+      padding: 2rem 3%;
+    }
+  }
+  @media (max-width: 1200px){
+    html {
+      font-size: 55%;
+    }
+  }
+  
